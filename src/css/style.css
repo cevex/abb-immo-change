@@ -1,0 +1,238 @@
+
+body, html {
+	margin: 0;
+}
+
+body {
+	padding: 5%;
+	background-color: #E5E5E5;
+}
+
+a {
+	text-decoration: none;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.container {
+	background-color: white;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	border-radius: 4px;
+
+	padding-bottom: 15px;
+}
+
+.title {
+	background-color: #EE2760;
+	font-size: 2.3em;
+	text-align: center;
+	color: white;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+
+}
+
+/*####################################################
+					Content
+######################################################*/
+
+.content {
+
+}
+
+.text-section {
+	margin: 3% 0;
+}
+
+#change-summary {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+#change-announce {
+	font-size: 1.5em;
+
+}
+
+#change-commitment {
+	font-size: 1.3em;
+	font-style: italic;
+	font-weight: bold;
+	color: #EE2760;
+}
+
+/*####################################################
+					Footer
+######################################################*/
+
+.footer {
+	display: flex;
+	flex-wrap: wrap-reverse;
+
+	justify-content: space-around;
+	align-items: center;
+}
+
+/*===============================
+		Change Logo
+=================================*/
+
+#change-logos {
+	display: flex;
+	flex-wrap: wrap-reverse;
+
+	justify-content: space-around;
+	align-items: center;
+
+	width: 50%;
+}
+
+#becoming {
+	display: inline-block;
+	width: 15%;
+	margin: 0 10px;
+}
+
+#becoming > img {
+	transform: rotate(90deg);
+}
+
+#becoming > p {
+	margin: 1px;
+}
+
+#guy-hoquet {
+	width: 20%;
+}
+
+#abb-immo {
+	display: inline-block;
+	width: 50%;
+}
+
+/*===============================
+			Social
+=================================*/
+
+#social-panel {
+	display: inline-block;
+	width: 15%;
+}
+
+#social-panel > a img {
+	width: 30%;
+}
+
+/*===============================
+			Find Us
+=================================*/
+
+#find-us {
+	display: flex;
+
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+
+	width: 25%;
+	min-width: 190px;
+	padding: 10px 10px;
+	background-color: #EE2760;
+	color: white;
+}
+
+#find-us > p {
+	margin: 2px;
+	font-size: 1em;
+}
+
+#mail {
+	font-style: italic;
+}
+
+#tel {
+	font-weight: bold;
+}
+
+/*####################################################
+					Animation
+######################################################*/
+
+.spin {
+	-webkit-animation: rotate-right 0.3s linear;
+	-moz-animation: rotate-right 0.3s linear;
+	animation: rotate-right 0.3s linear;
+
+}
+
+.spin:hover {
+	-webkit-animation: rotate-left 0.3s linear;
+	-moz-animation: rotate-left 0.3s linear;
+	animation: rotate-left 0.3s linear;
+}
+
+/*===============================
+			Rotate Left
+=================================*/
+
+@-moz-keyframes rotate-left {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes rotate-left {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate-left {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/*===============================
+			Rotate Right
+=================================*/
+
+@-moz-keyframes rotate-right {
+	from {
+		-moz-transform: rotate(360deg);
+	}
+	to {
+		-moz-transform: rotate(0deg);
+	}
+}
+
+@-webkit-keyframes rotate-right {
+	from {
+		-webkit-transform: rotate(360deg);
+	}
+	to {
+		-webkit-transform: rotate(0deg);
+	}
+}
+
+@keyframes rotate-right {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
