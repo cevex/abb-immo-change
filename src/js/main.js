@@ -14,7 +14,7 @@ $(function () {
 
 	function bindButton() {
 		$("#discover-now").click(function () {
-			// window.location.href = "http://abb-immo.com";
+			window.location.href = "http://abb-immo.com";
 		});
 	}
 

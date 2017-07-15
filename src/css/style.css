@@ -47,8 +47,8 @@ a {
 	min-height: 400px;
 	margin: auto;
 
-	padding-top: 20px;
-	padding-bottom: 30px;
+	padding-top: 15px;
+	padding-bottom: 20px;
 
 	display: flex;
 	justify-content: space-around;
@@ -185,8 +185,12 @@ a {
 }
 
 #social-panel > a img {
-	width: 25%;
+	cursor: pointer;
+	width: 23%;
 	margin: 2%;
+	background-color: lightgray;
+	border: 2px solid lightgray;
+	border-radius: 50%;
 }
 
 /*===============================
