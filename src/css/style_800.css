@@ -1,0 +1,45 @@
+@media only screen  and (max-width: 800px) {
+
+	/*####################################################
+					Footer
+	######################################################*/
+	.footer {
+		height: auto;
+		min-height: 150px;
+
+		flex-wrap: nowrap;
+
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+
+	#social-panel {
+		width: 200px;
+		margin: 10px;
+	}
+
+	.contact {
+		margin-bottom: 5px;
+		width: 100%;
+	}
+
+	/*####################################################
+                Content
+	######################################################*/
+	#change-logos {
+		width: 80%;
+
+		/*min-height: 150px;*/
+	}
+
+	/*#change-summary {*/
+	/*font-size: 1.5em;*/
+	/*}*/
+	/*#change-announce {*/
+	/*font-size: 1.3em;*/
+	/*}*/
+	/*#change-commitment {*/
+	/*font-size: 1.1em;*/
+	/*}*/
+}

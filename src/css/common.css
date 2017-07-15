@@ -1,51 +1,22 @@
-
-body, html {
+html, body {
 	margin: 0;
+	padding: 0;
+	height: 100%;
 }
 
-body {
-	padding: 5% 0;
-	background-color: #E5E5E5;
-}
-
-a {
-	text-decoration: none;
-}
 
 /*####################################################
 					Layout
 ######################################################*/
 
 .container {
-	position: relative;
-	margin: 0 auto;
-	width: 100%;
-	min-height: 100%;
-}
+	display: flex;
 
-.top-container {
-	position: absolute;
-	height: 30px;
-	width: 100%;
-}
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
 
-.bottom-container {
-	position: absolute;
-
-	height: 50px;
-	width: 100%;
-
-	bottom: 0;
-	left: 0;
-}
-
-.center-container {
-	position: absolute;
-
-	top: 30px;
-	right: 0;
-	left: 0;
-	bottom: 50px;
+	justify-content: space-between;
 }
 
 /*####################################################

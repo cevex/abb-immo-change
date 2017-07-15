@@ -1,0 +1,67 @@
+@media only screen  and (max-width: 600px) {
+
+	/*####################################################
+					Layout
+	######################################################*/
+	.container {
+		height: 100%;
+	}
+
+	.center-container {
+		min-height: 430px;
+	}
+
+	/*####################################################
+                    Content
+	######################################################*/
+
+
+	#change-summary {
+		padding-top: 0;
+		padding-bottom: 0;
+		font-size: 5vw;
+	}
+
+	#change-announce {
+		padding-top: 0;
+		padding-bottom: 0;
+		font-size: 3.5vw;
+	}
+
+	#change-commitment {
+		padding-top: 0;
+		padding-bottom: 0;
+		font-size: 3vw;
+	}
+
+	/*####################################################
+					Footer
+	######################################################*/
+	.footer {
+		height: auto;
+		min-height: 250px;
+
+		flex-wrap: nowrap;
+
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+
+	#social-panel {
+		width: 200px;
+		margin: auto;
+	}
+
+	.contact {
+		margin-bottom: 5px;
+		width: auto;
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+
+	.contact-field {
+		width: 100%;
+	}
+}
