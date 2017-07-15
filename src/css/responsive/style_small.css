@@ -1,0 +1,59 @@
+@media only screen  and (max-width: 450px) {
+
+	.title {
+		font-size: 1.8em;
+	}
+
+	/*===============================
+    		Change Logo
+	=================================*/
+	#change-logos {
+
+		width: 70%;
+		flex-wrap: nowrap;
+
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+
+	#becoming {
+		width: 20%;
+		margin: 10px 0;
+	}
+
+	#becoming > img {
+		transform: rotate(180deg);
+	}
+
+	#becoming > p {
+		margin: 1px;
+	}
+
+	#guy-hoquet {
+		width: 30%;
+	}
+
+	#guy-hoquet > p {
+		font-size: 40%;
+	}
+
+	#abb-immo {
+		width: 70%;
+	}
+
+	/*####################################################
+                    Content
+	######################################################*/
+	#change-summary {
+		font-size: 4vw;
+	}
+
+	#change-announce {
+		font-size: 3vw;
+	}
+
+	#change-commitment {
+		font-size: 3vw;
+	}
+}

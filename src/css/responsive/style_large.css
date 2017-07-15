@@ -1,3 +1,15 @@
+@media only screen  and (max-width: 1300px) {
+	#guy-hoquet > p {
+		font-size: 70%;
+	}
+}
+
+@media only screen  and (max-width: 1000px) {
+	#guy-hoquet > p {
+		font-size: 55%;
+	}
+}
+
 @media only screen  and (max-width: 850px) {
 
 	/*####################################################
@@ -29,17 +41,5 @@
 	######################################################*/
 	#change-logos {
 		width: 80%;
-
-		/*min-height: 150px;*/
 	}
-
-	/*#change-summary {*/
-	/*font-size: 1.5em;*/
-	/*}*/
-	/*#change-announce {*/
-	/*font-size: 1.3em;*/
-	/*}*/
-	/*#change-commitment {*/
-	/*font-size: 1.1em;*/
-	/*}*/
 }

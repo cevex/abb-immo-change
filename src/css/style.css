@@ -7,7 +7,6 @@ html, body {
 body {
 	position: relative;
 	background-color: white;
-
 }
 
 a {
@@ -47,6 +46,9 @@ a {
 	height: 75%;
 	min-height: 400px;
 	margin: auto;
+
+	padding-top: 20px;
+	padding-bottom: 30px;
 
 	display: flex;
 	justify-content: space-around;
@@ -89,12 +91,12 @@ a {
 =================================*/
 
 #change-summary {
-	font-size: 1.5em;
+	font-size: 1.8em;
 	font-weight: bold;
 }
 
 #change-announce {
-	font-size: 1.3em;
+	font-size: 1.5em;
 }
 
 #change-commitment {
@@ -116,10 +118,35 @@ a {
 	width: 60%;
 }
 
+#guy-hoquet {
+	width: 20%;
+	text-align: center;
+}
+
+#guy-hoquet > img {
+	display: block;
+	width: 100%;
+}
+
+#guy-hoquet > p {
+	display: block;
+	color: #314979;
+
+	margin: auto;
+	letter-spacing: 0;
+	font-size: 80%;
+
+	width: 100%;
+	height: 15%;
+	white-space: nowrap;
+	font-family: "Times New Roman", monospace !important;
+}
+
 #becoming {
 	display: inline-block;
 	width: 15%;
 	margin: 0 10px;
+	text-align: center;
 }
 
 #becoming > img {
@@ -128,10 +155,7 @@ a {
 
 #becoming > p {
 	margin: 1px;
-}
-
-#guy-hoquet {
-	width: 20%;
+	color: #EE2760;
 }
 
 #abb-immo {
@@ -209,81 +233,3 @@ a {
 	font-weight: bold;
 }
 
-/*####################################################
-					Animation
-######################################################*/
-
-.spin {
-	-webkit-animation: rotate-right 0.3s linear;
-	-moz-animation: rotate-right 0.3s linear;
-	animation: rotate-right 0.3s linear;
-
-}
-
-.spin:hover {
-	-webkit-animation: rotate-left 0.3s linear;
-	-moz-animation: rotate-left 0.3s linear;
-	animation: rotate-left 0.3s linear;
-}
-
-/*===============================
-			Rotate Left
-=================================*/
-
-@-moz-keyframes rotate-left {
-	from {
-		-moz-transform: rotate(0deg);
-	}
-	to {
-		-moz-transform: rotate(360deg);
-	}
-}
-
-@-webkit-keyframes rotate-left {
-	from {
-		-webkit-transform: rotate(0deg);
-	}
-	to {
-		-webkit-transform: rotate(360deg);
-	}
-}
-
-@keyframes rotate-left {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-/*===============================
-			Rotate Right
-=================================*/
-
-@-moz-keyframes rotate-right {
-	from {
-		-moz-transform: rotate(360deg);
-	}
-	to {
-		-moz-transform: rotate(0deg);
-	}
-}
-
-@-webkit-keyframes rotate-right {
-	from {
-		-webkit-transform: rotate(360deg);
-	}
-	to {
-		-webkit-transform: rotate(0deg);
-	}
-}
-
-@keyframes rotate-right {
-	from {
-		transform: rotate(360deg);
-	}
-	to {
-		transform: rotate(0deg);
-	}
-}

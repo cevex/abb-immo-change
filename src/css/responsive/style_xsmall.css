@@ -1,0 +1,18 @@
+@media all and (max-width: 350px) {
+
+	/*####################################################
+                    Content
+	######################################################*/
+	#change-summary {
+		font-size: 15px;
+	}
+
+	#change-announce {
+		font-size: 12px;
+	}
+
+	#change-commitment {
+		font-size: 12px;
+	}
+
+}
