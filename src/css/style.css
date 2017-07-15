@@ -181,12 +181,12 @@ a {
 =================================*/
 
 #social-panel {
-	width: 12%;
+	width: 200px;
 }
 
 #social-panel > a img {
 	cursor: pointer;
-	width: 23%;
+	width: 20%;
 	margin: 2%;
 	background-color: lightgray;
 	border: 2px solid lightgray;
