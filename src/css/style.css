@@ -65,6 +65,10 @@ a {
 	text-align: center;
 }
 
+.text-section {
+	padding: 10px;
+}
+
 /*####################################################
 					Title
 ######################################################*/
@@ -85,16 +89,16 @@ a {
 =================================*/
 
 #change-summary {
-	font-size: 3vw;
+	font-size: 1.5em;
 	font-weight: bold;
 }
 
 #change-announce {
-	font-size: 2.5vw;
+	font-size: 1.3em;
 }
 
 #change-commitment {
-	font-size: 2.3vw;
+	font-size: 1.3em;
 	font-style: italic;
 	font-weight: bold;
 	color: #EE2760;
@@ -153,8 +157,7 @@ a {
 =================================*/
 
 #social-panel {
-	display: inline-block;
-	width: 15%;
+	width: 12%;
 }
 
 #social-panel > a img {
@@ -195,7 +198,7 @@ a {
 
 .contact-field > p {
 	margin: 2px;
-	font-size: 1em;
+	font-size: 0.9em;
 }
 
 #mail {
