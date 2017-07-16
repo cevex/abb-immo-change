@@ -183,6 +183,7 @@ a {
 
 #social-panel {
 	width: 200px;
+	text-align: center;
 }
 
 #social-panel > a img {
