@@ -3,6 +3,8 @@ button {
 	margin-top: 20px;
 	padding: 1.2em 3em;
 
+	min-height: 50px;
+
 	color: white;
 	background-color: #EE2760;
 	border: none;

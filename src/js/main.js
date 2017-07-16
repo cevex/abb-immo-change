@@ -18,6 +18,12 @@ $(function () {
 		});
 	}
 
+	function bindlogos() {
+		$("#discover-now").click(function () {
+			window.location.href = "http://abb-immo.com";
+		});
+	}
+
 
 	//####################################################
 	//  			Logo Animation
