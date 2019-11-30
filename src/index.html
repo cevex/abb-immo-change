@@ -1,14 +1,23 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 
-	<title>The HTML5 Herald</title>
-	<meta name="description" content="The HTML5 Herald">
-	<meta name="author" content="SitePoint">
+	<title>ABB-immo change</title>
+	<meta name="description" content="ABB-immo change">
+	<meta name="author" content="cevex.dev@gmail.com">
 
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="css/animation.css">
+	<link rel="stylesheet" href="css/button.css">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive/style_large.css">
+	<link rel="stylesheet" href="css/responsive/style_medium.css">
+	<link rel="stylesheet" href="css/responsive/style_small.css">
+	<link rel="stylesheet" href="css/responsive/style_xsmall.css">
+
+	<link rel="icon" type="image/png" href="./images/icon/favicon.svg"/>
 
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -19,31 +28,26 @@
 
 <div class="container">
 
-	<div class="title text-center">
-		COMMUNIQU&Eacute;
+	<div class="top-container title">
+		<div class="title-text">COMMUNIQU&Eacute;</div>
 	</div>
 
-	<div class="content">
+	<div class="center-container">
 
 		<div id="change-summary" class="text-center text-section">
-			Jean-Luc Vexlard et toute son équipe vous informent <br/> du changement d'enseigne.
+			Jean-Luc Vexlard et toute son équipe vous informent du changement d'enseigne.
 		</div>
 
 		<div id="change-announce" class="text-center text-section">
-			Après 15 ans de franchise Guy Hoquet, l'agence toujours située<br/>
-			39 rue de la république à Bagnols-sur-Cèze devient ABB-immo.com
+			Après 15 ans de franchise Guy Hoquet, votre agence devient <strong>ABB-immo.com</strong>
 		</div>
 
-		<div id="change-commitment" class="text-center text-section">
-			Parce qu'un bien immobilier est le fruit d'une vie, nous nous
-			engageons à vos côtés !
-		</div>
-	</div>
+		<div id="change-logos" class="text-section">
 
-	<div class="footer">
-
-		<div id="change-logos">
-			<img id="guy-hoquet" class="logo" src="images/guy-hoquet.png"/>
+			<div id="guy-hoquet">
+				<img class="logo" src="images/guy-hoquet.png"/>
+				<p>BAGNOLS-SUR-CEZE</p>
+			</div>
 
 			<div id="becoming">
 				<img class="logo" src="images/icon/curved-arrow.svg"/>
@@ -53,25 +57,53 @@
 			<img id="abb-immo" class="logo" src="images/abb-immo.jpg"/>
 		</div>
 
+		<div id="change-commitment" class="text-center text-section">
+			Parce qu'un bien immobilier est le fruit d'une vie, nous nous
+			engageons à vos côtés !
+		</div>
+
+		<button id="discover-now">
+			Découvrez Maintenant !
+		</button>
+	</div>
+
+	<div class="bottom-container footer">
+
+		<div class="contact">
+			<div class="contact-field">
+				<img class="spin" src="images/icon/home.svg"/>
+				<p id="address" class="">39 rue de la république<br/>30200 Bagnols-sur-Cèze</p>
+			</div>
+
+			<div class="contact-field">
+				<img class="spin" src="images/icon/phone.svg"/>
+				<p id="tel" class="">04 66 90 50 50</p>
+			</div>
+
+			<div class="contact-field">
+				<img class="spin" src="images/icon/mail.svg"/>
+				<p id="mail" class="">contact@abbimmo.com</p>
+			</div>
+
+		</div>
+
 		<div id="social-panel">
 			<a class="icon" href="https://www.facebook.com/abbimmosarl/">
 				<img class="spin" src="images/icon/facebook.svg"/>
 			</a>
-			<a class="icon" href="https://twitter.com/guyhoquetbagnol">
+			<a class="icon" href="https://twitter.com/abbimmo">
 				<img class="spin" src="images/icon/twitter.svg"/>
 			</a>
-			<a class="icon" href="https://plus.google.com/u/0/+GUYHOQUETBAGNOLSSURCEZE">
+			<a class="icon" href=" https://plus.google.com/u/0/102007201413941625454">
 				<img class="spin" src="images/icon/google+.svg"/>
 			</a>
 		</div>
-
-		<div id="find-us">
-			<p id="adress" class="text-center">39 rue de la république <br/> 30200 Bagnols-sur-Cèze</p>
-			<p id="tel" class="text-center">Tél. 04 66 90 50 50</p>
-			<p id="mail" class="text-center">contact@abbimmo.com</p>
-		</div>
 	</div>
 </div>
+
+
+<script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 

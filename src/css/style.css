@@ -1,52 +1,94 @@
-
-body, html {
+html, body {
 	margin: 0;
+	padding: 0;
+	height: 100%;
 }
 
 body {
-	padding: 5%;
-	background-color: #E5E5E5;
+	position: relative;
+	background-color: white;
 }
 
 a {
 	text-decoration: none;
 }
 
+/*####################################################
+					Layout
+######################################################*/
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+
+	min-height: 400px;
+
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+
+	justify-content: space-between;
+}
+
+.top-container {
+	width: 100%;
+	height: 10%;
+	min-height: 50px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.center-container {
+	width: 80%;
+	height: 75%;
+	min-height: 400px;
+	margin: auto;
+
+	padding-top: 15px;
+	padding-bottom: 20px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.bottom-container {
+	width: 100%;
+	height: 10%;
+	min-height: 65px;
+}
+
 .text-center {
 	text-align: center;
 }
 
-.container {
-	background-color: white;
-	width: 80%;
-	margin: auto;
-	text-align: center;
-	border-radius: 4px;
-
-	padding-bottom: 15px;
+.text-section {
+	padding: 10px;
 }
+
+/*####################################################
+					Title
+######################################################*/
 
 .title {
 	background-color: #EE2760;
 	font-size: 2.3em;
 	text-align: center;
 	color: white;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-
 }
 
 /*####################################################
-					Content
+                    Content
 ######################################################*/
 
-.content {
-
-}
-
-.text-section {
-	margin: 3% 0;
-}
+/*===============================
+		Text
+=================================*/
 
 #change-summary {
 	font-size: 1.8em;
@@ -55,7 +97,6 @@ a {
 
 #change-announce {
 	font-size: 1.5em;
-
 }
 
 #change-commitment {
@@ -63,6 +104,64 @@ a {
 	font-style: italic;
 	font-weight: bold;
 	color: #EE2760;
+}
+
+/*===============================
+		Change Logo
+=================================*/
+
+#change-logos {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 60%;
+}
+
+#guy-hoquet {
+	width: 20%;
+	text-align: center;
+}
+
+#guy-hoquet > img {
+	display: block;
+	width: 100%;
+}
+
+#guy-hoquet > p {
+	display: block;
+	color: #314979;
+
+	font-weight: bold;
+	margin: auto;
+	letter-spacing: 0;
+	font-size: 80%;
+
+	width: 100%;
+	height: 15%;
+	white-space: nowrap;
+	font-family: "Times New Roman", monospace !important;
+}
+
+#becoming {
+	display: inline-block;
+	width: 15%;
+	margin: 0 10px;
+	text-align: center;
+}
+
+#becoming > img {
+	transform: rotate(90deg);
+}
+
+#becoming > p {
+	margin: 1px;
+	color: #EE2760;
+}
+
+#abb-immo {
+	display: inline-block;
+	width: 50%;
 }
 
 /*####################################################
@@ -75,43 +174,7 @@ a {
 
 	justify-content: space-around;
 	align-items: center;
-}
-
-/*===============================
-		Change Logo
-=================================*/
-
-#change-logos {
-	display: flex;
-	flex-wrap: wrap-reverse;
-
-	justify-content: space-around;
-	align-items: center;
-
-	width: 50%;
-}
-
-#becoming {
-	display: inline-block;
-	width: 15%;
-	margin: 0 10px;
-}
-
-#becoming > img {
-	transform: rotate(90deg);
-}
-
-#becoming > p {
-	margin: 1px;
-}
-
-#guy-hoquet {
-	width: 20%;
-}
-
-#abb-immo {
-	display: inline-block;
-	width: 50%;
+	background-color: #EE2760;
 }
 
 /*===============================
@@ -119,120 +182,54 @@ a {
 =================================*/
 
 #social-panel {
-	display: inline-block;
-	width: 15%;
+	width: 200px;
 }
 
 #social-panel > a img {
-	width: 30%;
+	cursor: pointer;
+	width: 20%;
+	margin: 2%;
+	background-color: lightgray;
+	border: 2px solid lightgray;
+	border-radius: 50%;
 }
 
 /*===============================
 			Find Us
 =================================*/
 
-#find-us {
+.contact {
 	display: flex;
+	justify-content: space-around;
 
-	flex-direction: column;
-	-ms-flex-direction: column;
-	-webkit-flex-direction: column;
-
-	width: 25%;
+	width: 75%;
 	min-width: 190px;
 	padding: 10px 10px;
-	background-color: #EE2760;
 	color: white;
 }
 
-#find-us > p {
+.contact-field {
+	padding-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.contact-field > img {
+	width: 20px;
+	height: 25px;
 	margin: 2px;
-	font-size: 1em;
+
+	padding-right: 5px;
+
+	color: white;
+}
+
+.contact-field > p {
+	margin: 2px;
+	font-size: 0.9em;
 }
 
 #mail {
 	font-style: italic;
-}
-
-#tel {
-	font-weight: bold;
-}
-
-/*####################################################
-					Animation
-######################################################*/
-
-.spin {
-	-webkit-animation: rotate-right 0.3s linear;
-	-moz-animation: rotate-right 0.3s linear;
-	animation: rotate-right 0.3s linear;
-
-}
-
-.spin:hover {
-	-webkit-animation: rotate-left 0.3s linear;
-	-moz-animation: rotate-left 0.3s linear;
-	animation: rotate-left 0.3s linear;
-}
-
-/*===============================
-			Rotate Left
-=================================*/
-
-@-moz-keyframes rotate-left {
-	from {
-		-moz-transform: rotate(0deg);
-	}
-	to {
-		-moz-transform: rotate(360deg);
-	}
-}
-
-@-webkit-keyframes rotate-left {
-	from {
-		-webkit-transform: rotate(0deg);
-	}
-	to {
-		-webkit-transform: rotate(360deg);
-	}
-}
-
-@keyframes rotate-left {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-/*===============================
-			Rotate Right
-=================================*/
-
-@-moz-keyframes rotate-right {
-	from {
-		-moz-transform: rotate(360deg);
-	}
-	to {
-		-moz-transform: rotate(0deg);
-	}
-}
-
-@-webkit-keyframes rotate-right {
-	from {
-		-webkit-transform: rotate(360deg);
-	}
-	to {
-		-webkit-transform: rotate(0deg);
-	}
-}
-
-@keyframes rotate-right {
-	from {
-		transform: rotate(360deg);
-	}
-	to {
-		transform: rotate(0deg);
-	}
 }

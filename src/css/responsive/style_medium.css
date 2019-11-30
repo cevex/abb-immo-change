@@ -1,0 +1,78 @@
+@media only screen  and (max-width: 600px) {
+
+	.text-section {
+		/*padding: 0;*/
+	}
+
+	/*####################################################
+					Layout
+	######################################################*/
+	.container {
+		height: 100%;
+	}
+
+	.center-container {
+		min-height: 430px;
+	}
+
+	/*####################################################
+                    Content
+	######################################################*/
+	#change-logos {
+		width: 40%;
+	}
+
+	#guy-hoquet > p {
+		font-size: 50%;
+	}
+
+	#change-logos {
+		width: 100%;
+	}
+
+	#change-summary {
+		padding-bottom: 0;
+		font-size: 5vw;
+	}
+
+	#change-announce {
+		padding-bottom: 0;
+		font-size: 3.5vw;
+	}
+
+	#change-commitment {
+		padding-bottom: 0;
+		font-size: 3vw;
+	}
+
+	/*####################################################
+                    Footer
+    ######################################################*/
+	.footer {
+		height: auto;
+		min-height: 250px;
+
+		flex-wrap: nowrap;
+
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+
+	#social-panel {
+		width: 200px;
+		margin: auto;
+	}
+
+	.contact {
+		width: auto;
+		margin-bottom: 5px;
+		flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+
+	.contact-field {
+		width: 100%;
+	}
+}
